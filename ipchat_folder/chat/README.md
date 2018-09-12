@@ -8,10 +8,6 @@ This application is develop in Django.
 
  - Python v3.5 or above
  - Django v2.1
- - Postrgres v10.5 or above
- - Python Package psycopg2 (it can be install with pip)
- - Python Package uuid import getnode as get_mac
+ -
 
-# Servidor
-
- charette21.ing.puc.cl
+# Run Application guide

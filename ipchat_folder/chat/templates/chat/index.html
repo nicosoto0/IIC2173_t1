@@ -1,0 +1,19 @@
+{% if all_msg %}
+  <h2>Messages IP Chat</h2>
+
+  <a href="add_msg/">Add new Message</a>
+
+
+  <ul>
+    {% for msg in all_msg reversed%}
+      <li>
+        {{ msg.content }}<br>
+        {{ msg.ip_client }} - {{ msg.request_time }} - <a href="{{msg.id}}/">Detail</a><br>
+        <br>
+      </li>
+    {% endfor %}
+  </ul>
+
+{% else %}
+  <h2>No Message in Chat<h2>
+{% endif %}
